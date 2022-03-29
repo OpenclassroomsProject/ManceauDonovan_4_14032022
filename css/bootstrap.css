@@ -280,8 +280,7 @@ img {
 }
 
 .carousel-inner>.item>a>img,
-.carousel-inner>.item>img,
-.img-responsive {
+.carousel-inner>.item>img {
     display: block;
     max-width: 100%;
     height: auto
