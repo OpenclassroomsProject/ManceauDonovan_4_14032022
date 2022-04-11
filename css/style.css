@@ -7,16 +7,37 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-body img {
-    height: 100%;
+img{
     width: 100%;
 }
 
+main blockquote cite{
+    color: #000000;
+}
 .center-block.image-resize-mode {
     width: 100px;
 }
-
+header{
+    height: 6.32vw;
+}
+nav.nav-header{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: calc(100% - 50px);
+}
+nav.nav-header a.navbar-brand{
+    padding-top: 20px;
+}
+nav.nav-header div{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.nav-header div a{
+    margin-right: 20px;
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -27,7 +48,14 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
+main section.description h1,main section.description p{
+    font-size: 3vw;
+    color: #004466 !important;
+    width: fit-content;
+}
+main section.description p{
+    font-size: 1.3vw;
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -230,6 +258,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    width: fit-content;
 }
 
 .navbar-brand img[src$=svg] {
@@ -610,7 +639,7 @@ h1 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF !important;
+    color: #004466!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -650,3 +679,7 @@ h1 {
     height: 100%;
     width: 100%;
 } */
+footer p {
+    color: #004466 !important;
+}
+
