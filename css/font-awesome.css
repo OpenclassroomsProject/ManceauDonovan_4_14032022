@@ -54,23 +54,6 @@
     content: "\f077"
 }
 
-.fa-twitter:before {
-    content: "\f099"
-}
-
-
-.fa-facebook:before {
-    content: "\f09a"
-}
-
-.fa-instagram:before {
-    content: "\f16d"
-}
-
-.fa-dribbble:before {
-    content: "\f17d"
-}
-
 .sr-only {
     position: absolute;
     width: 1px;

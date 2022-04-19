@@ -182,6 +182,10 @@ th {
     a[href]:after {
         content: " (" attr(href) ")"
     }
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
     thead {
         display: table-header-group
     }
@@ -280,7 +284,8 @@ img {
 }
 
 .carousel-inner>.item>a>img,
-.carousel-inner>.item>img {
+.carousel-inner>.item>img,
+.img-responsive {
     display: block;
     max-width: 100%;
     height: auto
@@ -369,6 +374,32 @@ ul ul {
     list-style: none
 }
 
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee
+}
+
+
+blockquote p:last-child,
+blockquote ul:last-child {
+    margin-bottom: 0
+}
+
+
+blockquote footer {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777
+}
+
+
+blockquote footer:before {
+    content: '\2014 \00A0'
+}
+
 address {
     margin-bottom: 20px;
     font-style: normal;
@@ -420,7 +451,6 @@ code {
 
 .col-md-8,
 .col-sm-12,
-.col-sm-3,
 .col-sm-4,
 .col-sm-6,
 .col-xs-12 {
@@ -442,7 +472,6 @@ code {
 @media (min-width:768px) {
     
     .col-sm-12,
-    .col-sm-3,
     .col-sm-4,
     .col-sm-6 {
         float: left
@@ -455,9 +484,6 @@ code {
     }
     .col-sm-4 {
         width: 33.33333333%
-    }
-    .col-sm-3 {
-        width: 25%
     }
 }
 
